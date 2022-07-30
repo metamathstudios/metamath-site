@@ -1,0 +1,18 @@
+.container {
+  
+  .navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 85px;
+
+    .logoContainer {
+      cursor: pointer;
+    }
+
+    .menuContainer {
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  }
+
+}

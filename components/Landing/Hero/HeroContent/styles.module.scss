@@ -1,0 +1,31 @@
+.contentContainer {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 0.3fr;
+
+    .fisrtColumnContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .secondColumnContainer {
+      width: 70vw;
+      font-size: 70px;
+      font-weight: 500;
+
+      .title {
+        width: 50vw;
+      }
+    }
+
+    .thirdColumnContainer {
+      font-size: 10px;
+    }
+  }
+}
