@@ -1,13 +1,15 @@
-import HeroContent from './HeroContent'
-import Navbar from './Navbar'
+import HeroContent from './components/HeroContent'
+import Navbar from './components/Navbar'
 import styles from './styles.module.scss'
 
 const Hero = () => {
   return (
-    <>
-      <Navbar />
-      <HeroContent />
-    </>
+    <div className={styles.container}>
+      <div className={styles.planetContainer}>
+        <Navbar />
+        <HeroContent />
+      </div>
+    </div>
   )
 }
 

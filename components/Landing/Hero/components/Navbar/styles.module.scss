@@ -1,0 +1,25 @@
+.fixedContainer {
+  width: 100%;
+  height: 25vh;
+  position: fixed;
+  padding: 0px 75px 0px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+
+    .logoContainer {
+      width: auto;
+      cursor: pointer;
+    }
+
+    .menuContainer {
+      cursor: pointer;
+      display: flex;
+    }
+  }
+}
