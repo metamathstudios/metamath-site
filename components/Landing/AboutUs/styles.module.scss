@@ -2,5 +2,7 @@
   height: 100vh;
   background-image: url('./assets/background.svg');
   background-size: cover;
-  padding: 0px 75px 0px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
