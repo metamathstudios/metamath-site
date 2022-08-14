@@ -12,7 +12,7 @@ const AboutUsContent = () => {
     <div className={styles.container}>
       <div className={styles.gridContainer}>
         <div className={styles.leftSide}>
-          <div className={styles.}></div>
+          <div className={styles.l}></div>
           <div className={styles.smallTitle}>
             About Us
           </div>

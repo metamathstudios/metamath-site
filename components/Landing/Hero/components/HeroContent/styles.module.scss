@@ -1,13 +1,14 @@
 .centerColumnContainer {
   height: 90vh;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
 
   .container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
 
     .contentContainer {
       width: 85%;
@@ -72,12 +73,6 @@
           }
         }
       }
-
-    }
-    .slidebarContainer {
-      position: fixed;
-      right: 0;
-      padding: 0px 75px 0px 0px;
     }
   }
 }
