@@ -12,20 +12,19 @@ const AboutUsContent = () => {
     <div className={styles.container}>
       <div className={styles.gridContainer}>
         <div className={styles.leftSide}>
-          <div className={styles.l}></div>
           <div className={styles.smallTitle}>
             About Us
           </div>
 
           <div className={styles.title}>
-            We offer the best <div className={styles.thinTitle}> you can <div className={styles.gradient}>trust</div></div>
+            We offer the best <div className={styles.thinTitle}> you can&nbsp;<div className={styles.gradient}>trust</div></div>
           </div>
 
           <div className={styles.text}>
           Focused on cutting-edge technology, MetaMath uses the best technologies and practices to create innovative blockchain solutions.
           </div>
 
-          <br />
+         
 
           <div className={styles.text}>
           We abstract the complexity of interacting with the blockchain. Our mission is to create user-friendly applications to make the transition from conventional web applications to Web3 seamlessly and intuitive. Always focused on delivering the best experience to the endpoint client.

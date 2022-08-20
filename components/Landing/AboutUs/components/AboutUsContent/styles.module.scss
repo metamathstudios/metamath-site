@@ -1,21 +1,56 @@
 .container {
-  padding: 120px 150px 0px 75px;
+  display: flex;
+  justify-content: center;
 
   .gridContainer {
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     .leftSide {
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       
       .smallTitle {
-        
+        font-weight: 100;
+        font-size: 11px;
+        line-height: 38px;
+      }
+
+      .title {
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 15px;
+
+        .thinTitle {
+          display: flex;
+          font-weight: 400;
+        }
+
+        .gradient {
+          background: linear-gradient(100.51deg, #41AFFF 42.18%, #662483 74.31%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+
+      .text {
+        font-weight: 200;
+        font-size: 17px;
+        margin-bottom: 10px;
       }
     }
 
     .rightSide {
-
+      .cardsGrid {
+        display: grid;
+        grid-template-areas: '1 2' 
+                             '3 4';
+        
+      }
     }
   }
 }

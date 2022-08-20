@@ -6,6 +6,7 @@
   justify-content: center;
   position: fixed;
   padding: 0px 65px 0px 135px;
+  z-index: 0;
 
   .centerContainer {
     display: grid;
@@ -15,6 +16,7 @@
     .scroll {
       display: flex;
       flex-direction: column;
+      margin-top: 220px;
     }
     
     .slideMenu {
