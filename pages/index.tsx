@@ -3,6 +3,7 @@ import Head from 'next/head'
 import AboutUs from '../components/Landing/AboutUs'
 import SlideBar from '../components/Landing/FixedComponents/SlideMenu'
 import Hero from '../components/Landing/Hero'
+import WhatWeDo from '../components/Landing/WhatWeDo'
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <SlideBar />
       <Hero />
       <AboutUs />
+      <WhatWeDo />
     </>
   )
 }
