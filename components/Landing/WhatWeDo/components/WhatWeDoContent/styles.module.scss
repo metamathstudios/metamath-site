@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  justify-content: center;
+  
+  .gridContainer {
+    width: 67%;
+    display: grid;
+    grid-template-columns: 0.87fr 1fr;
+
+    .leftSideContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .smallTitle {
+        font-weight: 100;
+        font-size: 11px;
+        line-height: 25px;
+      }
+
+      .title {
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 47px;
+        margin-bottom: 10px;
+
+        .thinTitle {
+          display: flex;
+          font-weight: 400;
+        }
+
+        .gradient {
+          background: linear-gradient(100.51deg, #41AFFF 42.18%, #662483 74.31%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+
+      .text {
+        font-weight: 200;
+        font-size: 15px;
+        margin-bottom: 40px;
+      }
+
+      .buttonContainer {
+        cursor: pointer;
+        width: 260px;
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: solid 2px var(--purple);
+        border-radius: 6px 0px 6px 0px;
+        text-align: center;
+        z-index: 10;
+
+        .button {
+          display: flex;
+          justify-content: space-between;
+          height: 100%;
+
+          .buttonText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 75%;
+            font-size: 15px;
+            font-weight: 200;
+          }
+
+          .buttonArrow {
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            background-color: var(--opurple);
+          }
+        }
+      }
+    }
+
+    .rightSideContainer {
+      display: flex;
+      justify-content: center;
+      
+
+      .columnContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title {
+          font-weight: 500;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

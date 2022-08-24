@@ -3,6 +3,8 @@ import Head from 'next/head'
 import AboutUs from '../components/Landing/AboutUs'
 import SlideBar from '../components/Landing/FixedComponents/SlideMenu'
 import Hero from '../components/Landing/Hero'
+import MetaMath from '../components/Landing/MetaMath'
+import Projects from '../components/Landing/Projects'
 import WhatWeDo from '../components/Landing/WhatWeDo'
 
 const Home: NextPage = () => {
@@ -16,6 +18,8 @@ const Home: NextPage = () => {
       <Hero />
       <AboutUs />
       <WhatWeDo />
+      <Projects />
+      <MetaMath />
     </>
   )
 }

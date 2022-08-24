@@ -1,7 +1,7 @@
 .centerColumnContainer {
   height: 90vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   z-index: 10;
 
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     margin-left: 100px;
-    margin-bottom: 50px;
+    margin-top: 150px;
 
     .contentContainer {
       width: 85%;
