@@ -1,9 +1,11 @@
+import ProjectsContent from './components/ProjectsContent'
+
 import styles from './styles.module.scss'
 
 const Projects = () => {
   return (
     <div className={styles.container}>
-      Igor mlk fein menó
+      <ProjectsContent />
     </div>
   )
 }

@@ -1,8 +1,79 @@
 .container {
+  width: 100%;
   height: 100vh;
-  background-color: black;
-  text-align: center;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  background-image: url(./assets/background.svg);
+  background-size: cover;
+  text-align: center;
+
+  .columnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+
+    .title {
+      font-size: 45px;
+      font-weight: 600;
+    }
+
+    .description {
+      margin-top: 20px;
+      padding: 0px 400px 0px 400px;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    .centerContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 40px;
+
+      .buttonContainer {
+        cursor: pointer;
+        width: 300px;
+        height: 65px;
+        border: solid 2px var(--blue);
+        border-radius: 6px 0px 6px 0px;
+        text-align: center;
+        z-index: 10;
+
+        .button {
+          display: flex;
+          justify-content: space-between;
+          height: 100%;
+
+          .buttonText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 75%;
+            font-size: 14px;
+            font-weight: 300;
+          }
+
+          .buttonArrow {
+            display: flex;
+            justify-content: center;
+            width: 25%;
+            background-color: var(--oblue);
+          }
+        }
+      }
+    }
+
+    .footerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      z-index: 10;
+      
+      .footer {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }
