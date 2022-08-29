@@ -1,20 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
-import scroll from './assets/scroll.svg'
+import scrollimg from './assets/scroll.svg'
 import line from './assets/line.svg'
 
 import styles from './styles.module.scss'
 
 const SlideBar = () => {
 
+  const [hide, setHide] = useState(false)
+  const [scroll, setScroll] = useState(1)
+
+  useEffect(() => {
+    window.onscroll = () => setScroll(document.documentElement.scrollTop)
+  }, [])
+
   const [selected, setSelected] = useState(1)
 
   return (
     <div className={styles.container}>
-      <div className={styles.centerContainer}>
-        <div className={styles.scroll}>
-          <Image src={scroll} alt='scroll' width={10}/>
+      <div className={scroll < 2050 ? styles.centerContainer : styles.scrollCenterContainer}>
+        <div className={scroll < 2050 ? styles.scroll : styles.scrollHidden}>
+          <Image src={scrollimg} alt='scroll' width={10}/>
           <Image src={line} alt='Scroll' width={10}/>
         </div>
 

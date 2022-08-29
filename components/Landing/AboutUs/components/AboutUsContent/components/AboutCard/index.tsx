@@ -5,11 +5,12 @@ type cardProps = {
   image: HTMLImageElement,
   title: string,
   text: string,
+  gradient: string
 }
 
 const AboutCard = ({...props}: cardProps) => {
   return (
-    <div className={styles.container}>
+    <div className={props.gradient == 'green' ? styles.greenContainer : styles.orangeContainer}>
       <div className={styles.paddingContainer}>
         <div className={styles.imageContainer}>
           <Image src={props.image} alt='Image' width={35}/>

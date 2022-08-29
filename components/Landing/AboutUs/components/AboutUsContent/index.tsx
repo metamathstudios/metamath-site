@@ -33,10 +33,10 @@ const AboutUsContent = () => {
         
         <div className={styles.rightSide}>
           <div className={styles.cardsGrid}>
-            <AboutCard title='Trust' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={trust} />
-            <AboutCard title='Design' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
-            <AboutCard title='Scalability' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={scalability} />
-            <AboutCard title='Performance' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={performance} />
+            <AboutCard title='Trust' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={trust} gradient='green' />
+            <AboutCard title='Design' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} gradient='orange'/>
+            <AboutCard title='Scalability' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={scalability} gradient='purple'/>
+            <AboutCard title='Performance' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={performance} gradient='red'/>
           </div>
         </div>
       </div>
