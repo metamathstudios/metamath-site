@@ -23,6 +23,7 @@
 }
 
 .greenContainer:hover {
+  cursor: pointer;
   background: linear-gradient(135deg, rgba(176, 255, 174, 0.8) 0%, rgba(125, 255, 122, 0.8) 28.09%, rgba(3, 131, 0, 0.8) 100%);
 }
 
@@ -51,5 +52,70 @@
 }
 
 .orangeContainer:hover {
+  cursor: pointer;
   background: orange;
+}
+
+
+
+
+.purpleContainer {
+  width: 240px;
+  height: 245px;
+  z-index: 10;
+
+  .paddingContainer {
+    padding: 20px;
+
+    .imageContainer {
+      margin: 20px 0px 20px 0px;
+    }
+
+    .titleContainer {
+      margin: 0px 0px 12px 0px;
+      font-size: 15px;
+    }
+
+    .textContainer {
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+}
+
+.purpleContainer:hover {
+  cursor: pointer;
+  background: purple;
+}
+
+
+
+
+.redContainer {
+  width: 240px;
+  height: 245px;
+  z-index: 10;
+
+  .paddingContainer {
+    padding: 20px;
+
+    .imageContainer {
+      margin: 20px 0px 20px 0px;
+    }
+
+    .titleContainer {
+      margin: 0px 0px 12px 0px;
+      font-size: 15px;
+    }
+
+    .textContainer {
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+}
+
+.redContainer:hover {
+  cursor: pointer;
+  background: red;
 }

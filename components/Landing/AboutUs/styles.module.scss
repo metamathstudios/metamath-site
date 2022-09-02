@@ -1,7 +1,7 @@
 .container {
   height: 100vh;
   background-image: url('./assets/background.svg');
-  background-size: cover;
+  background-size: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;

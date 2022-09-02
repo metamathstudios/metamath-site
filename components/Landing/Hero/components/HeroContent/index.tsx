@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import arrow from './assets/arrow.svg'
+import scrollArrow from './assets/scrollArrow.svg'
 
 import styles from './styles.module.scss'
 
@@ -18,16 +19,25 @@ const HeroContent = () => {
               DEVELOPING FRESH AND INNOVATE TOOLS FOR BLOCKCHAIN.
             </div>
             
-            <div className={styles.buttonContainer}>
-              <div className={styles.button}>
-                <div className={styles.buttonText}>
-                  REQUEST OUR SERVICES
-                </div>
-                <div className={styles.buttonArrow}>
-                  <Image src={arrow} alt='Arrow' width={8} />
+            <div className={styles.buttonMobileCenter}>
+              <div className={styles.buttonContainer}>
+                <div className={styles.button}>
+                  <div className={styles.buttonText}>
+                    REQUEST OUR SERVICES
+                  </div>
+                  <div className={styles.buttonArrow}>
+                    <Image src={arrow} alt='Arrow' width={8} />
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div className={styles.mobileArrowCenter}>
+              <div className={styles.mobileScrollArrow}>
+                <Image src={scrollArrow} height={150} alt='Scroll' />
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 import logo from './assets/logo.svg'
 import menu from './assets/menu.svg'

@@ -12,6 +12,10 @@
     justify-content: space-between;
     height: 35px;
 
+    @media (max-width: 550px) {
+      justify-content: center;
+    }
+
     .logoContainer {
       width: auto;
       cursor: pointer;
@@ -20,6 +24,11 @@
     .menuContainer {
       cursor: pointer;
       display: flex;
+    
+      @media (max-width: 550px) {
+        position: absolute;
+        right: 20px;
+      }
     }
   }
 }

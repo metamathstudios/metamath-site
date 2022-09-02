@@ -16,10 +16,10 @@ const Home: NextPage = () => {
       </Head>
       <SlideBar />
       <Hero />
-      <AboutUs />
+      {/* <AboutUs />
       <WhatWeDo />
       <Projects />
-      <MetaMath />
+      <MetaMath /> */}
     </>
   )
 }
