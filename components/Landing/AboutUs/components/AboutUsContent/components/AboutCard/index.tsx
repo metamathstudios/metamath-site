@@ -10,7 +10,7 @@ type cardProps = {
 
 const AboutCard = ({...props}: cardProps) => {
   return (
-    <div className={props.gradient == 'green' ? styles.greenContainer : styles.orangeContainer}>
+    <div className={styles.greenContainer}>
       <div className={styles.paddingContainer}>
         <div className={styles.imageContainer}>
           <Image src={props.image} alt='Image' width={35}/>

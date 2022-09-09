@@ -17,7 +17,7 @@ const AboutUsContent = () => {
           </div>
 
           <div className={styles.title}>
-            We offer the best <div className={styles.thinTitle}> you can&nbsp;<div className={styles.gradient}>trust</div></div>
+            We offer the best <div className={styles.thinTitle}> you can&nbsp;<span className={styles.gradient}>trust</span></div>
           </div>
 
           <div className={styles.text}>
