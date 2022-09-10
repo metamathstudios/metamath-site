@@ -14,8 +14,10 @@ const OptionsCard = () => {
         Some of our services
       </div>
 
-      <div className={styles.imageContainer}>
-        <Image src={option == 1 ? nft : null} alt='Services' width={300}/>
+      <div className={styles.centerContainer}>
+        <div className={styles.imageContainer}>
+          <Image src={option == 1 ? nft : null} alt='Services' width={300}/>
+        </div>
       </div>
 
       <div className={styles.titleContainer}>

@@ -15,7 +15,7 @@ const WhatWeDoContent = () => {
           </div>
 
           <div className={styles.title}>
-            why choose <div className={styles.thinTitle}><div className={styles.gradient}>metamath</div></div>
+            why choose <div className={styles.thinTitle}><span className={styles.gradient}>metamath</span></div>
           </div>
 
           <div className={styles.text}>
@@ -23,15 +23,15 @@ const WhatWeDoContent = () => {
           </div>
 
           <div className={styles.buttonContainer}>
-              <div className={styles.button}>
-                <div className={styles.buttonText}>
-                  LEARN MORE
-                </div>
-                <div className={styles.buttonArrow}>
-                  <Image src={arrow} alt='Arrow' width={8} />
-                </div>
+            <div className={styles.button}>
+              <div className={styles.buttonText}>
+                LEARN MORE
+              </div>
+              <div className={styles.buttonArrow}>
+                <Image src={arrow} alt='Arrow' width={8} />
               </div>
             </div>
+          </div>
         </div>
 
         <div className={styles.rightSideContainer}>
@@ -41,6 +41,20 @@ const WhatWeDoContent = () => {
             </div>
           </div>
         </div>
+
+        <div className={styles.centerButtonContainer}>
+          <div className={styles.buttonContainer}>
+            <div className={styles.button}>
+              <div className={styles.buttonText}>
+                LEARN MORE
+              </div>
+              <div className={styles.buttonArrow}>
+                <Image src={arrow} alt='Arrow' width={8} />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )

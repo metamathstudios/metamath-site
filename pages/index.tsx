@@ -18,8 +18,8 @@ const Home: NextPage = () => {
       <Hero />
       <AboutUs />
       <WhatWeDo />
-      {/*<Projects />
-      <MetaMath />*/}
+      {/*<Projects />*/}
+      <MetaMath />
     </>
   )
 }

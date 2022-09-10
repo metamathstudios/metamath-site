@@ -10,10 +10,12 @@
     @media (max-width: 1150px) {
       grid-template-columns: 1fr;
       width: 60%;
+      margin-top: -200px;
     }
 
     @media (max-width: 550px) {
       width: 90%;
+      margin-top: -100px;
     }
 
     .leftSide {
@@ -48,7 +50,8 @@
         }
 
         @media (max-width: 550px) {
-          font-size: 25px;
+          font-size: 30px;
+          line-height: 30px;
         }
 
         .thinTitle {
@@ -83,7 +86,8 @@
         }
 
         @media (max-width: 550px) {
-          font-size: 11px;
+          font-size: 12px;
+          font-weight: 300;
         }
       }
     }
@@ -91,7 +95,15 @@
     .rightSide {
       display: flex;
       justify-content: flex-end;
-      scroll-behavior: auto;
+
+      @media (max-width: 1150px) {
+        scroll-behavior: auto;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 550px) {
+        margin-top: 0px;
+      }
 
       .cardsGrid {
         width: 98%;
