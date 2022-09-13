@@ -21,7 +21,7 @@
     .leftSide {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
 
       @media (max-width: 1150px) {
         text-align: center;
@@ -78,7 +78,7 @@
 
       .text {
         font-weight: 200;
-        font-size: 17px;
+        font-size: 15px;
         margin-bottom: 10px;
 
         @media (max-width: 1150px) {

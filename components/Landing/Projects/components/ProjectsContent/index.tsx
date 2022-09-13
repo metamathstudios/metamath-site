@@ -4,10 +4,10 @@ import styles from './styles.module.scss'
 
 import projects from './assets/someprojects.svg'
 import mobileProjects from './assets/mobilesomeprojects.svg'
-import planethorse from './assets/planethorse.svg'
-import megahyped from './assets/megahyped.svg'
-import chatr from './assets/chatr.svg'
-import portales from './assets/portales.svg'
+import planethorse from './assets/planethorse.png'
+import megahyped from './assets/megahyped.png'
+import chatr from './assets/chatr.png'
+import portales from './assets/portales.png'
 
 const ProjectsContent = () => {
   return (
@@ -26,9 +26,9 @@ const ProjectsContent = () => {
         <div className={styles.rightSideContainer}>
           <div className={styles.projectsGrid}>
             <Image src={planethorse} alt='Planet Horse' width={200} height={100} style={{cursor: 'pointer'}} />
-            <Image src={megahyped} alt='Planet Horse' width={200} height={100} style={{cursor: 'pointer'}} />
-            <Image src={chatr} alt='Planet Horse' width={200} height={100} style={{cursor: 'pointer'}} />
-            <Image src={portales} alt='Planet Horse' width={200} height={100} style={{cursor: 'pointer'}} />
+            <Image src={megahyped} alt='Mega Hyped' width={200} height={100} style={{cursor: 'pointer'}} />
+            <Image src={chatr} alt='chatr Horse' width={200} height={100} style={{cursor: 'pointer'}} />
+            <Image src={portales} alt='Portales' width={200} height={100} style={{cursor: 'pointer'}} />
           </div>
         </div>
       </div>
