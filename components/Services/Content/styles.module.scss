@@ -1,0 +1,119 @@
+.content {
+  overflow: visible;
+
+  .columns {
+    display: grid;
+    grid-template-areas: 'leftColumn rightColumn';
+    grid-auto-columns: minmax(auto, 1fr);
+    column-gap: 150px;
+    height: 100vh;
+
+    @media screen and (max-width: 1070px) {
+      column-gap: 20px;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-template-areas: 'leftColumn' 'rightColumn';
+    }
+
+    .leftColumn {
+      grid-area: leftColumn;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 900px) {
+        margin-top: 50px;
+      }
+
+      .text {
+        max-width: 400px;
+
+        @media screen and (max-width: 900px) {
+          max-width: 1000px;
+        }
+
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          @media screen and (max-width: 900px) {
+            justify-content: center;
+          }
+
+          .image {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+
+          .titleText {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+        }
+
+        .description {
+          text-align: left;
+          font-family: 'Inter', sans-serif;
+          font-size: 17px;
+          margin-top: 40px;
+          margin-bottom: 40px;
+
+          @media screen and (max-width: 900px) {
+            text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 13.5px;
+            margin-top: 15px;
+            margin-bottom: 0;
+          }
+        }
+
+        .desktopCTA {
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .rightColumn {
+      grid-area: rightColumn;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 900px) {
+        margin-bottom: 20px;
+        flex-direction: column;
+
+        img {
+          max-width: 300px;
+          margin-top: 10px;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        margin-top: 0;
+        max-height: 200px;
+      }
+
+      .mobileCTA {
+        display: none;
+        margin-top: 20px;
+
+        @media screen and (max-width: 900px) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
