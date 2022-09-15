@@ -19,8 +19,8 @@ const SlideBar = () => {
 
   return (
     <div className={styles.container}>
-      <div className={scroll < 2050 ? styles.centerContainer : styles.scrollCenterContainer}>
-        <div className={scroll < 2050 ? styles.scroll : styles.scrollHidden}>
+      <div className={scroll < 4050 ? styles.centerContainer : styles.scrollCenterContainer}>
+        <div className={scroll < 4050 ? styles.scroll : styles.scrollHidden}>
           <Image src={scrollimg} alt='scroll' width={10}/>
           <Image src={line} alt='Scroll' width={10}/>
         </div>

@@ -25,10 +25,21 @@ const ProjectsContent = () => {
 
         <div className={styles.rightSideContainer}>
           <div className={styles.projectsGrid}>
-            <Image src={planethorse} alt='Planet Horse' width={200} height={100} style={{cursor: 'pointer'}} />
-            <Image src={megahyped} alt='Mega Hyped' width={200} height={100} style={{cursor: 'pointer'}} />
-            <Image src={chatr} alt='chatr Horse' width={200} height={100} style={{cursor: 'pointer'}} />
-            <Image src={portales} alt='Portales' width={200} height={100} style={{cursor: 'pointer'}} />
+            <div className={styles.projectCard}>
+              <Image src={planethorse} alt='Planet Horse' className={styles.image} />
+            </div>
+
+            <div className={styles.projectCard}>
+              <Image src={planethorse} alt='Mega Hyped' className={styles.image} />
+            </div>
+
+            <div className={styles.projectCard}>
+              <Image src={chatr} alt='chatr Horse' className={styles.image} />
+            </div>
+
+            <div className={styles.projectCard}>
+              <Image src={portales} alt='Portales'  className={styles.image} />
+            </div>
           </div>
         </div>
       </div>
