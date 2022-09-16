@@ -110,6 +110,7 @@
         display: grid;
         grid-template-areas: '1 2' '3 4';
         background-color: #ffffff02;
+        justify-content: center;
 
         @media (max-width: 1150px) {
           grid-template-areas: '1 2 3 4';

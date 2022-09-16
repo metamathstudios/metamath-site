@@ -3,11 +3,14 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 
 import nft from './assets/nft.svg'
+import sc from './assets/sc.svg'
+import smartphone from './assets/smartphone.svg'
+
 import { useState } from 'react'
 
 const OptionsCard = () => {
-  const [option, setOption] = useState(1)
-
+  const [option, setOption] = useState(nft)
+  
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -16,7 +19,7 @@ const OptionsCard = () => {
 
       <div className={styles.centerContainer}>
         <div className={styles.imageContainer}>
-          <Image src={option == 1 ? nft : null} alt='Services' width={300}/>
+          <Image src={option} alt='Services' width={300} height={300}/>
         </div>
       </div>
 
@@ -29,9 +32,9 @@ const OptionsCard = () => {
       </div>
 
       <div className={styles.optionsContainer}>
-        <div className={styles.options} onClick={() => setOption(1)}></div>
-        <div className={styles.options} onClick={() => setOption(2)}></div>
-        <div className={styles.options} onClick={() => setOption(3)}></div>
+        <div className={styles.options} onClick={() => setOption(nft)}></div>
+        <div className={styles.options} onClick={() => setOption(sc)}></div>
+        <div className={styles.options} onClick={() => setOption(smartphone)}></div>
       </div>
     </div>
   )

@@ -1,0 +1,64 @@
+.greenContainer {
+  width: 240px;
+  height: 245px;
+  z-index: 10;
+
+  @media (max-width: 1150px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  .paddingContainer {
+    padding: 20px;
+
+    @media (max-width: 1150px) {
+      padding: 15px
+    }
+
+    .imageContainer {
+      margin: 20px 0px 20px 0px;
+
+      @media (max-width: 1150px) {
+        margin: 15px 0px 15px 0px;
+        max-width: 30px;
+      }
+    }
+
+    .titleContainer {
+      margin: 0px 0px 12px 0px;
+      font-size: 15px;
+
+      @media (max-width: 1150px) {
+        margin: 0px 0px 8px 0px;
+        font-size: 12px;
+      }
+    }
+
+    .textContainer {
+      font-size: 14px;
+      font-weight: 200;
+
+      @media (max-width: 1150px) {
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.greenContainer:hover {
+  background: linear-gradient(135deg, rgba(176, 255, 174, 0.8) 0%, rgba(125, 255, 122, 0.8) 28.09%, rgba(3, 131, 0, 0.8) 100%);
+
+  .paddingContainer {
+    padding: 10px 20px 0px 25px;
+    scale: 1.08;
+  }
+
+  .imageContainer {
+    filter: brightness(100);
+  }
+
+  .textContainer {
+    font-size: 13px;
+  }
+}

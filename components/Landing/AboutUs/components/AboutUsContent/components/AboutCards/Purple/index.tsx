@@ -5,12 +5,11 @@ type cardProps = {
   image: HTMLImageElement,
   title: string,
   text: string,
-  gradient: string
 }
 
-const AboutCard = ({...props}: cardProps) => {
+const PurpleAboutCard = ({...props}: cardProps) => {
   return (
-    <div className={styles.greenContainer}>
+    <div className={styles.purpleContainer}>
       <div className={styles.paddingContainer}>
         <div className={styles.imageContainer}>
           <Image src={props.image} alt='Image' width={35}/>
@@ -28,4 +27,4 @@ const AboutCard = ({...props}: cardProps) => {
   )
 }
 
-export default AboutCard
+export default PurpleAboutCard

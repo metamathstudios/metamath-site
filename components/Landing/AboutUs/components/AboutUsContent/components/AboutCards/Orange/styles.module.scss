@@ -1,4 +1,4 @@
-.greenContainer {
+.orangeContainer {
   width: 240px;
   height: 245px;
   z-index: 10;
@@ -12,7 +12,7 @@
     padding: 20px;
 
     @media (max-width: 1150px) {
-      padding: 15px
+      padding: 15px;
     }
 
     .imageContainer {
@@ -46,7 +46,24 @@
   }
 }
 
-.greenContainer:hover {
-  cursor: pointer;
-  background: linear-gradient(135deg, rgba(176, 255, 174, 0.8) 0%, rgba(125, 255, 122, 0.8) 28.09%, rgba(3, 131, 0, 0.8) 100%);
+.orangeContainer:hover {
+  background: linear-gradient(
+    135.17deg,
+    #efcc74 0%,
+    #e69f15 29.17%,
+    #885a00 100%
+  );
+
+  .paddingContainer {
+    padding: 10px 20px 0px 25px;
+    scale: 1.08;
+  }
+
+  .imageContainer {
+    filter: brightness(100);
+  }
+
+  .textContainer {
+    font-size: 13px;
+  }
 }
