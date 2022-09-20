@@ -72,6 +72,16 @@
             border-radius: 15px;
           }
         }
+
+        .projectCardMH {
+          cursor: pointer;
+          background-image: url(../../../../../../public/images/Landing/megahyped.png);
+          background-size: cover;
+          height: 95%;
+          border-radius: 15px;
+          box-shadow: 0px 0px 20px 5px rgba(32, 81, 122, 0.5);
+          z-index: 10;
+        }
       }
     }
   }

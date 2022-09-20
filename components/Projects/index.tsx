@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 const ProjectsPage: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Popup type={PopupType.MEGA_HYPED} />
+      <Popup type={PopupType.CHATR} />
     </div>
   )
 }

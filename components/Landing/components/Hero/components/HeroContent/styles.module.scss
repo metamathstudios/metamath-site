@@ -74,6 +74,7 @@
         }
 
         .buttonMobileCenter {
+          z-index: 10;
 
           @media (max-width: 850px) {
             display: flex;
@@ -91,16 +92,7 @@
             border-radius: 6px 0px 6px 0px;
             text-align: center;
             
-            background: {
-              image: linear-gradient(90deg, var(--blue) 60%, transparent 50%);
-              position: 100%;
-              size: 400%;
-              transform: rot;
-            }
-            transition: background 1s ease-out;
-            
             &:hover {
-              background-position: 0;
               box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
             }
             

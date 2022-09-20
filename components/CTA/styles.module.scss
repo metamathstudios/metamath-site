@@ -7,6 +7,7 @@
   border: solid 2px #41afff;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 10;
 
   @media screen and (max-width: 900px) {
     margin: auto;
@@ -99,6 +100,7 @@
   border: solid 2px #e2a0ff;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 10;
 
   @media screen and (max-width: 900px) {
     margin: auto;
@@ -174,6 +176,7 @@
   border: solid 2px #fdffa0;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 10;
 
   @media screen and (max-width: 900px) {
     margin: auto;
@@ -220,6 +223,7 @@
     justify-content: center;
     cursor: pointer;
     border-bottom-right-radius: 7px;
+    z-index: 10;
 
     img {
       margin-top: 0 !important;

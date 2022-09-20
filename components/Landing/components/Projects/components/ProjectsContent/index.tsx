@@ -29,8 +29,8 @@ const ProjectsContent = () => {
               <Image src={planethorse} alt='Planet Horse' className={styles.image} />
             </div>
 
-            <div className={styles.projectCard}>
-              <Image src={planethorse} alt='Mega Hyped' className={styles.image} />
+            <div className={styles.projectCardMH}>
+              
             </div>
 
             <div className={styles.projectCard}>

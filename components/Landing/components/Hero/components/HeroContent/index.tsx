@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import CTA, { CTAType } from '../../../../../CTA'
 
 import arrow from './assets/arrow.svg'
 import scrollArrow from './assets/scrollArrow.svg'
@@ -20,16 +21,10 @@ const HeroContent = () => {
             </div>
             
             <div className={styles.buttonMobileCenter}>
-              <div className={styles.buttonContainer}>
-                <div className={styles.button}>
-                  <div className={styles.buttonText}>
-                    REQUEST OUR SERVICES
-                  </div>
-                  <div className={styles.buttonArrow}>
-                    <Image src={arrow} alt='Arrow' width={8} />
-                  </div>
-                </div>
-              </div>
+              <CTA
+                type={CTAType.REQUEST_SERVICES}
+                link="https://google.com.br"
+              />
             </div>
 
             <div className={styles.mobileArrowCenter}>
