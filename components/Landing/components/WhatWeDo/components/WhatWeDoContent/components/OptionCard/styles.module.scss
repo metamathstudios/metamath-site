@@ -36,6 +36,7 @@
   .titleContainer {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 
     @media (max-width: 950px) {
       display: none;
@@ -43,10 +44,15 @@
   }
 
   .descriptionContainer {
+    height: 100px;
     padding: 0px 30px 0px 30px;
     text-align: center;
     font-weight: 200;
     font-size: 13px;
+
+    @media (max-width: 1200px) {
+      height: 150px;
+    }
 
     @media (max-width: 950px) {
       font-size: 13px;
@@ -64,6 +70,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    gap: 20px;
 
     @media (max-width: 950px) {
       margin-top: 15px;
@@ -73,7 +80,6 @@
       cursor: pointer;
       width: 10px;
       height: 10px;
-      margin-right: 20px;
       background-color: #41Afff; 
       border-radius: 5px;
       z-index: 10;
@@ -83,7 +89,6 @@
       cursor: pointer;
       width: 10px;
       height: 10px;
-      margin-right: 20px;
       background-color: white;  
       border-radius: 5px;
       z-index: 10;

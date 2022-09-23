@@ -5,7 +5,7 @@
   .gridContainer {
     width: 67%;
     display: grid;
-    grid-template-columns: 0.87fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     @media (max-width: 950px) {
       width: 60%;
@@ -19,11 +19,16 @@
     .leftSideContainer {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
 
       @media (max-width: 950px) {
         text-align: center;
         margin-top: 100px;
+      }
+
+      @media (max-width: 500px) {
+        justify-content: flex-end;
+        margin-top: 0px;
       }
 
       .smallTitle {
@@ -137,11 +142,14 @@
     }
 
     .centerButtonContainer {
-      display: flex;
-      justify-content: center;
 
       @media (max-width: 950px) {
-        margin-bottom: 80px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 950px) {
+        display: none;
       }
 
       .buttonContainer {

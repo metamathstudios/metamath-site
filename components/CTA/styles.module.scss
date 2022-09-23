@@ -29,7 +29,7 @@
     justify-content: flex-start;
     padding-left: 20px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 10;
 
     @media screen and (max-width: 500px) {
       height: 70px;
@@ -43,6 +43,7 @@
   }
 
   .arrow {
+    z-index: 10;
     width: 80px;
     height: 75px;
     background: rgba(65, 175, 255, 0.5);
@@ -92,6 +93,7 @@
 }
 
 .learnMore {
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,6 +117,7 @@
   }
 
   .text {
+    z-index: 10;
     width: 170px;
     height: 75px;
     display: flex;
@@ -135,6 +138,7 @@
   }
 
   .arrow {
+    z-index: 10;
     width: 80px;
     height: 75px;
     background: rgba(226, 160, 255, 0.5);
@@ -168,6 +172,7 @@
 }
 
 .view {
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,6 +196,7 @@
   }
 
   .text {
+    z-index: 10;
     width: 280px;
     height: 75px;
     display: flex;
@@ -215,6 +221,7 @@
   }
 
   .arrow {
+    z-index: 10;
     width: 80px;
     height: 75px;
     background: rgb(253, 255, 160, 0.5);

@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className={styles.fixedContainer}>
       <div className={styles.navBarContainer}>
         <div className={styles.logoContainer}>
-          <Image src={logo} alt='Logo' width={140}/>
+          <a href='#heroPage'><Image src={logo} alt='Logo' width={140}/></a>
         </div>
         <div className={styles.menuContainer} onClick={openSidebar}>
           <Image src={menu} alt='Menu' width={25}/>

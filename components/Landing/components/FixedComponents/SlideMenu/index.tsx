@@ -26,11 +26,11 @@ const SlideBar = () => {
         </div>
 
         <div className={styles.slideMenu}>
-          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 1 ? 'Home' : ''}</div> <div className={selected == 1 ? styles.selected : styles.notSelected} onClick={() => setSelected(1)} /> </div>
-          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 2 ? 'About Us' : ''}</div> <div className={selected == 2 ? styles.selected : styles.notSelected} onClick={() => setSelected(2)} /> </div>
-          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 3 ? 'What We Do' : ''}</div> <div className={selected == 3 ? styles.selected : styles.notSelected} onClick={() => setSelected(3)} /> </div>
-          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 4 ? 'Projects' : ''}</div> <div className={selected == 4 ? styles.selected : styles.notSelected} onClick={() => setSelected(4)} /> </div>
-          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 5 ? 'MetaMath' : ''}</div> <div className={selected == 5 ? styles.selected : styles.notSelected} onClick={() => setSelected(5)} /> </div>
+          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 1 ? 'Home' : ''}</div> <a href='#heroPage'><div className={selected == 1 ? styles.selected : styles.notSelected} onClick={() => setSelected(1)} /></a></div>
+          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 2 ? 'About Us' : ''}</div> <a href='#aboutUsPage'><div className={selected == 2 ? styles.selected : styles.notSelected} onClick={() => setSelected(2)} /></a> </div>
+          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 3 ? 'What We Do' : ''}</div> <a href='#whatWeDoPage'><div className={selected == 3 ? styles.selected : styles.notSelected} onClick={() => setSelected(3)} /></a> </div>
+          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 4 ? 'Projects' : ''}</div> <a href='#projectsPage'><div className={selected == 4 ? styles.selected : styles.notSelected} onClick={() => setSelected(4)} /></a> </div>
+          <div className={styles.columnContainer}> <div className={styles.text}>{selected == 5 ? 'MetaMath' : ''}</div> <a href='#metamathPage'><div className={selected == 5 ? styles.selected : styles.notSelected} onClick={() => setSelected(5)} /></a> </div>
         </div>
       </div>
     </div>

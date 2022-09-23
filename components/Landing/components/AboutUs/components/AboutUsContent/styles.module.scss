@@ -25,6 +25,7 @@
 
       @media (max-width: 1150px) {
         text-align: center;
+        margin-top: 150px;
       }
 
       .smallTitle {
@@ -99,6 +100,7 @@
       @media (max-width: 1150px) {
         scroll-behavior: auto;
         margin-top: 20px;
+        display: none;
       }
 
       @media (max-width: 550px) {
@@ -109,7 +111,6 @@
         width: 98%;
         display: grid;
         grid-template-areas: '1 2' '3 4';
-        background-color: #ffffff02;
         justify-content: center;
 
         @media (max-width: 1150px) {
@@ -118,7 +119,7 @@
           width: 55%;
           position: absolute;
           left: 25%;
-          padding-left: 400px;
+          padding-left: 200px;
         }
 
         @media (max-width: 550px) {

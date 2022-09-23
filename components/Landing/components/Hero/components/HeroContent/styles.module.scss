@@ -41,16 +41,17 @@
             width: auto;
             font-size: 40px;
             text-align: center;
-            line-height: 50px;
+            line-height: 40px;
           }
 
           @media (max-width: 550px) {
             font-size: 35px;
+            line-height: 35px;
           }
 
           @media (max-width: 450px) {
             font-size: 35px;
-            line-height: 30px;
+            line-height: 35px;
             font-weight: 600;
           }
         }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 
 import arrow from './assets/arrow.svg'
+import CTA, { CTAType } from '../../../CTA'
 
 const MetaMath = () => {
   return (
@@ -18,16 +19,10 @@ const MetaMath = () => {
         </div>
 
         <div className={styles.centerContainer}>
-          <div className={styles.buttonContainer}>
-            <div className={styles.button}>
-              <div className={styles.buttonText}>
-                REQUEST OUR SERVICES
-              </div>
-              <div className={styles.buttonArrow}>
-                <Image src={arrow} alt='Arrow' width={8} />
-              </div>
-            </div>
-          </div>
+          <CTA 
+            type={CTAType.REQUEST_SERVICES} 
+            link='https://metamathstudios.com/services'
+          />
         </div>
 
         <div className={styles.footerContainer}>

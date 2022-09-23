@@ -25,24 +25,35 @@ const LandingPage = () => {
         <Sidebar />
 
         <Slide>
-          <Hero />
+          <div id='heroPage'>
+            <Hero/>
+          </div>
         </Slide>
 
         <Slide>
-          <AboutUs />
+          <div id='aboutUsPage'>
+            <AboutUs />
+          </div>
         </Slide>
 
         <Slide>
-          <WhatWeDo />
+          <div id='whatWeDoPage'>
+            <WhatWeDo />
+          </div>
         </Slide>
 
         {screenWidth >= 700 ? (
           <Slide>
-            <Projects />
+            <div id='projectsPage'>
+              <Projects />
+            </div>
           </Slide>
         ) : null}
+
         <Slide>
-          <MetaMath />
+          <div id='metamathPage'>
+            <MetaMath />
+          </div>
         </Slide>
       </FullPage>
     </div>

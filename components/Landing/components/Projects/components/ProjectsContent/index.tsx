@@ -9,6 +9,8 @@ import megahyped from './assets/megahyped.png'
 import chatr from './assets/chatr.png'
 import portales from './assets/portales.png'
 
+import Popup, { PopupType } from '../../../../../Projects/Popup'
+
 const ProjectsContent = () => {
   return (
     <div className={styles.container}>
@@ -25,7 +27,7 @@ const ProjectsContent = () => {
 
         <div className={styles.rightSideContainer}>
           <div className={styles.projectsGrid}>
-            <div className={styles.projectCard}>
+            <div className={styles.projectCard} onClick={() => {return(<Popup />)}}>
               <Image src={planethorse} alt='Planet Horse' className={styles.image} />
             </div>
 
