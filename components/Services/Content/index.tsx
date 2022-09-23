@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useContext, useEffect, useRef } from 'react'
+import { FullPage, Slide } from 'react-full-page'
 import { ServicesPageContext } from '../../../contexts/ServicesPage'
 import { useIntersection } from '../../../hooks/useIntersection'
 import CTA, { CTAType } from '../../CTA'
@@ -48,7 +49,7 @@ const Content: React.FC = () => {
           var multiplay = 5
 
           if (window.matchMedia('(max-width: 900px)').matches) {
-            multiplay = 10
+            multiplay = 0
           } else {
             multiplay = 5
           }
@@ -85,57 +86,65 @@ const Content: React.FC = () => {
 
   return (
     <div className={styles.content} id="content">
-      {data.map((value, index) => {
-        const elementRef = useRef<HTMLDivElement>(null)
-        const isOnScreen = useIntersection(elementRef, '-380px')
+      <FullPage duration={800}>
+        {data.map((value, index) => {
+          const elementRef = useRef<HTMLDivElement>(null)
+          const isOnScreen = useIntersection(elementRef, '-380px')
 
-        useEffect(() => {
-          if (isOnScreen) {
-            setServiceSlide(index + 1)
-          }
-        })
+          useEffect(() => {
+            if (isOnScreen) {
+              setServiceSlide(index + 1)
+            }
+          })
 
-        return (
-          <section
-            className={styles.columns}
-            key={index}
-            ref={elementRef}
-            id={value.id}
-          >
-            <div className={styles.leftColumn}>
-              <div className={styles.text}>
-                <div className={styles.title}>
-                  <div className={styles.image}>
-                    <img
-                      src={`/images/Services/${value.icon}.svg`}
-                      alt="Icon"
+          return (
+            <Slide key={index}>
+              <section
+                className={styles.columns}
+                ref={elementRef}
+                id={value.id}
+              >
+                <div className={styles.leftColumn}>
+                  <div className={styles.text}>
+                    <div className={styles.title}>
+                      <div className={styles.image}>
+                        <img
+                          src={`/images/Services/${value.icon}.svg`}
+                          alt="Icon"
+                        />
+                      </div>
+                      <div className={styles.titleText}>
+                        <span>{value.title}</span>
+                      </div>
+                    </div>
+                    <div className={styles.description}>
+                      {value.description}
+                    </div>
+                    <div className={styles.desktopCTA}>
+                      <CTA
+                        type={CTAType.REQUEST_SERVICES}
+                        link="https://google.com.br"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.rightColumn}>
+                  <img
+                    src={`/images/Services/${value.image}.svg`}
+                    alt="Image"
+                  />
+                  <div className={styles.mobileCTA}>
+                    <CTA
+                      type={CTAType.REQUEST_SERVICES}
+                      link="https://google.com.br"
                     />
                   </div>
-                  <div className={styles.titleText}>
-                    <span>{value.title}</span>
-                  </div>
                 </div>
-                <div className={styles.description}>{value.description}</div>
-                <div className={styles.desktopCTA}>
-                  <CTA
-                    type={CTAType.REQUEST_SERVICES}
-                    link="https://google.com.br"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className={styles.rightColumn}>
-              <img src={`/images/Services/${value.image}.svg`} alt="Image" />
-              <div className={styles.mobileCTA}>
-                <CTA
-                  type={CTAType.REQUEST_SERVICES}
-                  link="https://google.com.br"
-                />
-              </div>
-            </div>
-          </section>
-        )
-      })}
+              </section>
+            </Slide>
+          )
+        })}
+      </FullPage>
     </div>
   )
 }

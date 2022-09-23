@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../Sidebar'
+import Background from './Background'
 import Content from './Content'
 import Navegation from './Navegation'
 
@@ -11,6 +12,7 @@ const ServicesPage: React.FC = () => {
       <Navegation />
       <Content />
       <Sidebar />
+      <Background />
     </div>
   )
 }

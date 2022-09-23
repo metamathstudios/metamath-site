@@ -8,22 +8,23 @@ import WhatWeDo from './components/WhatWeDo'
 
 import styles from './styles.module.scss'
 
-import { FullPage, Slide } from 'react-full-page'
 import { useEffect, useState } from 'react'
+import { FullPage, Slide } from 'react-full-page'
 
 const LandingPage = () => {
   let [screenWidth, setScreenWidth] = useState(0)
 
   useEffect(() => {
-     setScreenWidth(window.innerWidth)
+    setScreenWidth(window.innerWidth)
   })
+
   return (
     <div className={styles.container}>
       <FullPage duration={800}>
         <SlideBar />
         <Sidebar />
-        
-        <Slide >
+
+        <Slide>
           <Hero />
         </Slide>
 
@@ -35,11 +36,11 @@ const LandingPage = () => {
           <WhatWeDo />
         </Slide>
 
-        {screenWidth >= 700 ?
+        {screenWidth >= 700 ? (
           <Slide>
             <Projects />
           </Slide>
-        : null}
+        ) : null}
         <Slide>
           <MetaMath />
         </Slide>

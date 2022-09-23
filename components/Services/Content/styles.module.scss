@@ -97,6 +97,13 @@
         }
       }
 
+      @media screen and (max-width: 425px) {
+        img {
+          max-width: 200px;
+          margin-top: 10px;
+        }
+      }
+
       @media screen and (max-width: 900px) {
         margin-top: 0;
         max-height: 200px;
