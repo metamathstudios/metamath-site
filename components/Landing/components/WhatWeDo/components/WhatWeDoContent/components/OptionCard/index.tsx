@@ -36,7 +36,7 @@ const OptionsCard = () => {
         : null}
 
         {option == sc ? 
-          'Following Ethereum Smart Contract best practices, our Solidity-based programs can be replicated in any EVM-compatible network such as Polygon, Binance Smart Chain, Harmony ONE, Avalanche, Moonbeam/Moonriver, Gnosis Chain, and many others. Our Smart Contracts are battle-tested and carefully tailored to satisfy any specific prerequisites.'
+          'Following Ethereum Smart Contract best practices, our Solidity-based programs can be replicated in any EVM-compatible network such as Polygon, Binance Smart Chain, Harmony ONE, Avalanche, Moonbeam/Moonriver, Gnosis Chain, and many others.'
         : null}
 
         {option == smartphone ? 

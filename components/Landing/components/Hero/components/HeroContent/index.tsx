@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import CTA, { CTAType } from '../../../../../CTA'
 
-import arrow from './assets/arrow.svg'
 import scrollArrow from './assets/scrollArrow.svg'
 
 import styles from './styles.module.scss'
@@ -29,7 +28,7 @@ const HeroContent = () => {
 
             <div className={styles.mobileArrowCenter}>
               <div className={styles.mobileScrollArrow}>
-                <Image src={scrollArrow} height={150} alt='Scroll' />
+                <Image src={scrollArrow} height={180} alt='Scroll' />
               </div>
             </div>
 

@@ -88,45 +88,6 @@
           font-size: 12px;
         }
       }
-
-      .buttonContainer {
-        cursor: pointer;
-        width: 260px;
-        height: 65px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: solid 2px var(--purple);
-        border-radius: 6px 0px 6px 0px;
-        text-align: center;
-        z-index: 10;
-
-        @media (max-width: 950px) {
-          display: none;
-        }
-
-        .button {
-          display: flex;
-          justify-content: space-between;
-          height: 100%;
-
-          .buttonText {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 75%;
-            font-size: 15px;
-            font-weight: 200;
-          }
-
-          .buttonArrow {
-            display: flex;
-            justify-content: center;
-            width: 25%;
-            background-color: var(--opurple);
-          }
-        }
-      }
     }
 
     .rightSideContainer {
