@@ -43,7 +43,7 @@ const AboutUsContent = () => {
         <div className={styles.rightSide}>
           <div className={styles.cardsGrid}>
             <GreenAboutCard title='Trust' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={trust} />
-            <OrangeAboutCard title='Deign' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
+            <OrangeAboutCard title='Design' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
             <PurpleAboutCard title='Scalability' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={scalability} />
             <RedAboutCard title='Performance' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={performance} />
           </div>
@@ -63,7 +63,7 @@ const AboutUsContent = () => {
               </SwiperSlide>
 
               <SwiperSlide>            
-                <OrangeAboutCard title='Deign' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
+                <OrangeAboutCard title='Design' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
               </SwiperSlide>
 
               <SwiperSlide>            

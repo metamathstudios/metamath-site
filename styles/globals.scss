@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --blue: #41AFFF;
+  --blue: #41afff;
   --oblue: rgba(65, 175, 255, 0.35);
-  --purple: #E2A0FF;
+  --purple: #e2a0ff;
   --opurple: rgba(226, 160, 255, 0.35);
 }
 
@@ -13,6 +13,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  color: white;
+  background: black;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #cacaca #3c3c3c;
 }
 
 a {
@@ -20,16 +28,16 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+*::-webkit-scrollbar {
+  width: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+*::-webkit-scrollbar-track {
+  background: #3c3c3c;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 20px;
+  border: 3px solid #3c3c3c;
 }
