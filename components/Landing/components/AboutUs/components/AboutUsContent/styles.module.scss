@@ -13,6 +13,10 @@
       margin-top: -100px;
     }
 
+    @media (max-width: 700px) {
+      width: 80%;
+    }
+
     @media (max-width: 550px) {
       width: 90%;
       margin-top: -100px;
@@ -45,9 +49,9 @@
         margin-bottom: 15px;
 
         @media (max-width: 1150px) {
-          font-size: 35px;
+          font-size: 30px;
           line-height: 30px;
-          margin-bottom: 25px;
+          margin-bottom: 15px;
         }
 
         @media (max-width: 550px) {
@@ -83,7 +87,7 @@
         margin-bottom: 10px;
 
         @media (max-width: 1150px) {
-          font-size: 14px;
+          font-size: 12px;
         }
 
         @media (max-width: 550px) {
@@ -99,7 +103,7 @@
 
       @media (max-width: 1150px) {
         margin-top: 20px;
-        display: none;
+        justify-content: center;
       }
 
       @media (max-width: 550px) {
@@ -114,13 +118,18 @@
         z-index: 10;
 
         @media (max-width: 1150px) {
-          grid-template-areas: '1 2 3 4';
-  
+          display: none;
         }
       }
 
-      .MobileCardsGrid {
-        @media (max-width: 1150px) {
+      .mobileCardsGrid {
+        max-width: 240px;
+        max-height: 245px;
+        margin-top: 20px;
+        margin-left: 40px;
+        z-index: 999;
+
+        @media (min-width: 1150px) {
           display: none;
         }
       }

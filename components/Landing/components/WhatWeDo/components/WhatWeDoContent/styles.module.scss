@@ -52,6 +52,11 @@
           line-height: 30px;
         }
 
+        @media (max-height: 600px) {
+          font-size: 25px;
+          margin-bottom: 5px;
+        }
+
         @media (max-width: 450px) {
           margin-top: 60px;
         }
@@ -85,7 +90,7 @@
         }
 
         @media (max-width: 550px) {
-          font-size: 12px;
+          font-size: 11px;
         }
       }
     }
@@ -94,7 +99,9 @@
       display: flex;
       justify-content: center;
       
-
+      @media (max-height: 580px) {
+        display: none;
+      }
       .columnContainer {
         display: flex;
         flex-direction: column;

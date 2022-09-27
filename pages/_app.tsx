@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app'
 import '../styles/globals.scss'
 
+import 'swiper/css'
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
