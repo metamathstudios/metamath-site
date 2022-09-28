@@ -1,11 +1,15 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { FullPage, Slide } from 'react-full-page'
 import { ServicesPageContext } from '../../../contexts/ServicesPage'
-import { useIntersection } from '../../../hooks/useIntersection'
 import CTA, { CTAType } from '../../CTA'
 import { data } from '../data'
 import styles from './styles.module.scss'
+
+interface SlideDataType {
+  from: number
+  to: number
+}
 
 const Content: React.FC = () => {
   const { setServiceSlide } = useContext(ServicesPageContext)
@@ -86,24 +90,14 @@ const Content: React.FC = () => {
 
   return (
     <div className={styles.content} id="content">
-      <FullPage duration={800}>
+      <FullPage
+        duration={800}
+        afterChange={(data: SlideDataType) => setServiceSlide(data.to)}
+      >
         {data.map((value, index) => {
-          const elementRef = useRef<HTMLDivElement>(null)
-          const isOnScreen = useIntersection(elementRef, '-380px')
-
-          useEffect(() => {
-            if (isOnScreen) {
-              setServiceSlide(index + 1)
-            }
-          })
-
           return (
             <Slide key={index}>
-              <section
-                className={styles.columns}
-                ref={elementRef}
-                id={value.id}
-              >
+              <section className={styles.columns} id={value.id}>
                 <div className={styles.leftColumn}>
                   <div className={styles.text}>
                     <div className={styles.title}>

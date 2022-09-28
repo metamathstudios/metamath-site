@@ -11,8 +11,8 @@ const ServicesPage: React.FC = () => {
     <div className={styles.container}>
       <Navegation />
       <Content />
-      <Sidebar />
       <Background />
+      <Sidebar />
     </div>
   )
 }

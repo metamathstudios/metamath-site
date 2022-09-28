@@ -54,21 +54,6 @@ const Sidebar: React.FC = () => {
           </div>
           <div
             className={styles.item}
-            onMouseEnter={() => animate('JOIN', animateNavItem02)}
-            onMouseLeave={() => animate('LEAVE', animateNavItem02)}
-            onClick={() => {
-              route.push(
-                route.pathname === '/projects' ? '/services' : '/projects'
-              )
-            }}
-          >
-            <span>
-              {route.pathname === '/projects' ? 'Services' : 'Projects'}
-            </span>
-            <div className={styles.animated} ref={animateNavItem02} />
-          </div>
-          <div
-            className={styles.item}
             onMouseEnter={() => animate('JOIN', animateNavItem03)}
             onMouseLeave={() => animate('LEAVE', animateNavItem03)}
             onClick={() => {
