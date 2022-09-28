@@ -51,13 +51,11 @@ const LandingPage = () => {
             </div>
           </Slide>
 
-          {screenWidth >= 700 ? (
-            <Slide>
-              <div id="projectsPage">
-                <Projects />
-              </div>
-            </Slide>
-          ) : null}
+          <Slide>
+            <div id="projectsPage">
+              <Projects />
+            </div>
+          </Slide>
 
           <Slide>
             <div id="metamathPage">

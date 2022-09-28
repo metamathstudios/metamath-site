@@ -1,15 +1,23 @@
 import Image from 'next/image'
-import { useContext } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import { PopupContext } from '../../../../../../contexts/PopupContext'
+
 import chatr from './assets/chatr.png'
 import mobileProjects from './assets/mobilesomeprojects.svg'
 import planethorse from './assets/planethorse.png'
 import portales from './assets/portales.png'
 import projects from './assets/someprojects.svg'
+
 import styles from './styles.module.scss'
 
 const ProjectsContent = () => {
   const { setPopup } = useContext(PopupContext)
+
+  const [screenHeight, setScreenHeight] = useState(0)
+
+  useEffect(() => {
+    setScreenHeight(window.innerHeight)
+  })
 
   return (
     <div className={styles.container}>
@@ -38,13 +46,15 @@ const ProjectsContent = () => {
                 className={styles.image}
               />
             </div>
-
-            <div
-              className={styles.projectCardMH}
-              onClick={() => {
-                setPopup('megahyped')
-              }}
-            />
+            
+            {screenHeight >= 640 ?
+              <div
+                className={styles.projectCardMH}
+                onClick={() => {
+                  setPopup('megahyped')
+                }}
+              />
+            : null}
 
             <div
               className={styles.projectCard}
