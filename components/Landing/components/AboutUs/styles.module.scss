@@ -1,6 +1,6 @@
 .container {
   height: 100vh;
-  background-image: url('./assets/background.svg');
+  background-image: url('./assets/AUbackground.webp');
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -8,7 +8,7 @@
   justify-content: center;
 
   @media (max-width: 1150px) {
-    background-image: url('./assets/mobilebg.svg');
+    background-image: url('./assets/AUbackground.webp');
     background-position: 100%;
     background-size: cover;
   }
