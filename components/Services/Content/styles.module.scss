@@ -1,5 +1,6 @@
 .content {
   overflow: visible;
+  background-color: transparent;
 
   .columns {
     display: grid;
@@ -48,11 +49,26 @@
             display: flex;
             align-items: center;
             justify-content: flex-start;
+
+            @media screen and (max-width: 425px) {
+              width: 40px;
+              height: 40px;
+              justify-content: center;
+              margin-right: 15px;
+
+              img {
+                width: 100%;
+              }
+            }
           }
 
           .titleText {
             font-size: 1.1rem;
             font-weight: 500;
+
+            @media screen and (max-width: 425px) {
+              font-size: 0.9rem;
+            }
           }
         }
 
@@ -99,8 +115,8 @@
 
       @media screen and (max-width: 425px) {
         img {
-          max-width: 200px;
-          margin-top: 10px;
+          max-width: 160px;
+          margin-top: 0;
         }
       }
 

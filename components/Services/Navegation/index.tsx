@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React, { useContext } from 'react'
 import { ServicesPageContext } from '../../../contexts/ServicesPage'
 import { SidebarContext } from '../../../contexts/Sidebar'
@@ -8,13 +9,14 @@ import Sidebar from './assets/sidebar.svg'
 import styles from './styles.module.scss'
 
 const Navegation: React.FC = () => {
+  const route = useRouter()
   const { serviceSlide, setServiceSlide } = useContext(ServicesPageContext)
   const { openSidebar } = useContext(SidebarContext)
 
   return (
     <>
       <div className={styles.header}>
-        <div className={styles.logo}>
+        <div className={styles.logo} onClick={() => route.push('/')}>
           <div className={styles.logoDesktop}>
             <Image src={Logo} alt="Logo" />
           </div>
@@ -26,7 +28,7 @@ const Navegation: React.FC = () => {
           <div className={styles.titleDesktop}>
             <h1>OUR SERVICES</h1>
           </div>
-          <div className={styles.titleMobile}>
+          <div className={styles.titleMobile} onClick={() => route.push('/')}>
             <Image src={Logo} alt="Logo" />
           </div>
         </div>
@@ -38,7 +40,7 @@ const Navegation: React.FC = () => {
         <div
           className={styles.ball}
           style={
-            serviceSlide === 1
+            serviceSlide === 0
               ? { backgroundColor: '#41afff' }
               : { backgroundColor: '#fff' }
           }
@@ -53,7 +55,7 @@ const Navegation: React.FC = () => {
         <div
           className={styles.ball}
           style={
-            serviceSlide === 2
+            serviceSlide === 1
               ? { backgroundColor: '#41afff' }
               : { backgroundColor: '#fff' }
           }
@@ -68,7 +70,7 @@ const Navegation: React.FC = () => {
         <div
           className={styles.ball}
           style={
-            serviceSlide === 3
+            serviceSlide === 2
               ? { backgroundColor: '#41afff' }
               : { backgroundColor: '#fff' }
           }
@@ -83,7 +85,7 @@ const Navegation: React.FC = () => {
         <div
           className={styles.ball}
           style={
-            serviceSlide === 4
+            serviceSlide === 3
               ? { backgroundColor: '#41afff' }
               : { backgroundColor: '#fff' }
           }
@@ -98,7 +100,7 @@ const Navegation: React.FC = () => {
         <div
           className={styles.ball}
           style={
-            serviceSlide === 5
+            serviceSlide === 4
               ? { backgroundColor: '#41afff' }
               : { backgroundColor: '#fff' }
           }
