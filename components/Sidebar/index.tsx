@@ -86,9 +86,9 @@ const Sidebar: React.FC = () => {
 
         <div className={styles.footer}>
           <div className={styles.icons}>
-            <img src="/images/discord.svg" alt="Discord" />
-            <img src="/images/twitter.svg" alt="Twitter" />
-            <img src="/images/linkedin.svg" alt="Linkedin" />
+            <img src="/images/discord.svg" alt="Discord"/>
+            <img src="/images/twitter.svg" alt="Twitter" onClick={ () => { window ? window.open('https://twitter.com/MetaMathStudios') : null } }/>
+            <img src="/images/linkedin.svg" alt="Linkedin" onClick={ () => { window ? window.open('https://www.linkedin.com/company/metamathstudios/') : null } }/>
           </div>
           <div className={styles.links}>
             <span>Terms of service</span> - <span>Privacy policy</span>

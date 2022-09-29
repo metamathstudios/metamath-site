@@ -85,7 +85,7 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
             animate('LEAVE', props.type)
           }}
         >
-          <div className={styles.text}>REQUEST THIS SERVICE</div>
+          <div className={styles.text}>REQUEST A SERVICE</div>
           <div className={styles.divisor} ref={element} />
           <div className={styles.arrow}>
             <img src="/images/arrow.svg" alt="Arrow" />

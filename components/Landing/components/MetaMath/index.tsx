@@ -11,11 +11,11 @@ const MetaMath = () => {
       <div className={styles.columnContainer}>
         <div className={styles.title}>
           Quality and safety <br />
-          Hire our services
+          Request our services
         </div>
 
         <div className={styles.description}>
-          Lorem Ipsum is simply It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          Reach out the to MetaMath Team today and build your project from scratch with the best professionals in web3.
         </div>
 
         <div className={styles.centerContainer}>

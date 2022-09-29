@@ -26,7 +26,7 @@ const AboutUsContent = () => {
           </div>
 
           <div className={styles.title}>
-            We offer the best <div className={styles.thinTitle}> you can&nbsp;<span className={styles.gradient}>trust</span></div>
+            We offer solutions <div className={styles.thinTitle}> you can&nbsp;<span className={styles.gradient}>trust</span></div>
           </div>
 
           <div className={styles.text}>
@@ -42,10 +42,10 @@ const AboutUsContent = () => {
         
         <div className={styles.rightSide}>
           <div className={styles.cardsGrid}>
-            <GreenAboutCard title='Trust' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={trust} />
-            <OrangeAboutCard title='Design' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
-            <PurpleAboutCard title='Scalability' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={scalability} />
-            <RedAboutCard title='Performance' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={performance} />
+            <GreenAboutCard title='Trust' text='Professionals focused on Security and best testing Practices' image={trust} />
+            <OrangeAboutCard title='Design' text='Top-notch design, improved for user experience and usability' image={design} />
+            <PurpleAboutCard title='Scalability' text='Tools that scale on demand with high maintainability and extensibility' image={scalability} />
+            <RedAboutCard title='Performance' text='Proved performant services, for high demand and high confiability' image={performance} />
           </div>
 
           <div className={styles.mobileCardsGrid}>
@@ -59,19 +59,19 @@ const AboutUsContent = () => {
               }}
             >
               <SwiperSlide>            
-                <GreenAboutCard title='Trust' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={trust} />
+                <GreenAboutCard title='Trust' text='Professionals focused on Security and best testing Practices' image={trust} />
               </SwiperSlide>
 
               <SwiperSlide>            
-                <OrangeAboutCard title='Design' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={design} />
+                <OrangeAboutCard title='Design' text='Top-notch design, improved for user experience and usability' image={design} />
               </SwiperSlide>
 
               <SwiperSlide>            
-                <PurpleAboutCard title='Scalability' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={scalability} />
+                <PurpleAboutCard title='Scalability' text='Tools that scale on demand with high maintainability and extensibility' image={scalability} />
               </SwiperSlide>
 
               <SwiperSlide>            
-                <RedAboutCard title='Performance' text='nim dis vulputate ut pharetra sit amet aliquam id diam maecenas ultrices mi' image={performance} />
+                <RedAboutCard title='Performance' text='Proved performant services, for high demand and high confiability' image={performance} />
               </SwiperSlide>
             </Swiper>
           </div>

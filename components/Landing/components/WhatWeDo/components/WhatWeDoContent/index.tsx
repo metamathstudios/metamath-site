@@ -20,7 +20,7 @@ const WhatWeDoContent = () => {
           </div>
 
           <div className={styles.text}>
-            Experieced in Smart Contract develompment, on and off-chain data processing, and analysis, our skills cover all steps towards developing your product. From back-end architectures to frond-end development, UI/UX development, UI/UX development, test and quality assurance, and after scale support services.
+            Experienced in Smart Contract development, on and off-chain data processing, and analysis, our skills cover all steps towards developing your product. From back-end architectures to frond-end development, UI/UX development, UI/UX development, test and quality assurance, and after scale support services.
           </div>
 
           <div className={styles.centerButtonContainer}>
