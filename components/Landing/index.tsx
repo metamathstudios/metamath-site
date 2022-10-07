@@ -28,7 +28,7 @@ const LandingPage = () => {
       <div className={styles.container}>
         <FullPage
           duration={800}
-          afterChange={(data: SlideDataType) => setActualSlide(data.to)}
+          afterChange={(data: SlideDataType) => {setActualSlide(data.to)}}
         >
           <SlideBar />
           <Sidebar />
