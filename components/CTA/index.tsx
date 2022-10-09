@@ -10,7 +10,7 @@ export enum CTAType {
 
 interface ComponentType {
   type: CTAType
-  link: string
+  link?: string
 }
 
 const CTA: React.FC<ComponentType> = (props: ComponentType) => {
@@ -84,6 +84,9 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
           onMouseLeave={() => {
             animate('LEAVE', props.type)
           }}
+          onClick={() =>
+            window.open('https://t0ftgnz1h0u.typeform.com/to/HovsEUgL')
+          }
         >
           <div className={styles.text}>REQUEST A SERVICE</div>
           <div className={styles.divisor} ref={element} />
@@ -102,6 +105,7 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
           onMouseLeave={() => {
             animate('LEAVE', props.type)
           }}
+          onClick={() => window.open('https://github.com/metamathstudios')}
         >
           <div className={styles.text}>LEARN MORE</div>
           <div className={styles.divisor} ref={element} />
@@ -123,7 +127,7 @@ const CTA: React.FC<ComponentType> = (props: ComponentType) => {
           onClick={() => window.open(props.link)}
         >
           <div className={styles.text}>
-            VIEW MORE ON {getHostname(props.link).toUpperCase()}
+            VIEW MORE ON {getHostname(props.link!).toUpperCase()}
           </div>
           <div className={styles.divisor} ref={element} />
           <div className={styles.arrow}>

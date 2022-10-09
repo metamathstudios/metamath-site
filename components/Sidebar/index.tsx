@@ -57,7 +57,7 @@ const Sidebar: React.FC = () => {
             onMouseEnter={() => animate('JOIN', animateNavItem03)}
             onMouseLeave={() => animate('LEAVE', animateNavItem03)}
             onClick={() => {
-              window.open('https://www.typeform.com/')
+              window.open('https://t0ftgnz1h0u.typeform.com/to/BW1MehM5')
             }}
           >
             <span>Join the Team</span>
@@ -79,6 +79,9 @@ const Sidebar: React.FC = () => {
 
               button.style.backgroundColor = 'transparent'
             }}
+            onClick={() =>
+              window.open('https://t0ftgnz1h0u.typeform.com/to/HovsEUgL')
+            }
           >
             Request our services
           </div>
@@ -86,9 +89,27 @@ const Sidebar: React.FC = () => {
 
         <div className={styles.footer}>
           <div className={styles.icons}>
-            <img src="/images/discord.svg" alt="Discord"/>
-            <img src="/images/twitter.svg" alt="Twitter" onClick={ () => { window ? window.open('https://twitter.com/MetaMathStudios') : null } }/>
-            <img src="/images/linkedin.svg" alt="Linkedin" onClick={ () => { window ? window.open('https://www.linkedin.com/company/metamathstudios/') : null } }/>
+            <img src="/images/discord.svg" alt="Discord" />
+            <img
+              src="/images/twitter.svg"
+              alt="Twitter"
+              onClick={() => {
+                window
+                  ? window.open('https://twitter.com/MetaMathStudios')
+                  : null
+              }}
+            />
+            <img
+              src="/images/linkedin.svg"
+              alt="Linkedin"
+              onClick={() => {
+                window
+                  ? window.open(
+                      'https://www.linkedin.com/company/metamathstudios/'
+                    )
+                  : null
+              }}
+            />
           </div>
           <div className={styles.links}>
             <span>Terms of service</span> - <span>Privacy policy</span>
