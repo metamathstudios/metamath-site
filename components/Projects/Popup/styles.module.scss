@@ -1,0 +1,271 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba($color: #000000, $alpha: 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .popup {
+    width: 100%;
+    max-width: 1200px;
+    height: 650px;
+    background-image: url('/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+
+    @media screen and (max-width: 1250px) {
+      max-width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+    }
+
+    .nav {
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 20px 13px 20px;
+
+      @media screen and (max-width: 1250px) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      .title {
+        font-size: 14px;
+      }
+
+      .closeButton {
+        cursor: pointer;
+
+        img {
+          max-width: 10px;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      .sidebar {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(30px);
+        width: 400px;
+        height: 610px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media screen and (max-width: 1250px) {
+          width: 100%;
+          height: calc(100vh - 40px);
+          justify-content: space-evenly;
+        }
+
+        .top {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 20px;
+
+          .image {
+            width: 370px;
+            height: 230px;
+            background-color: white;
+            box-shadow: 0px 0px 20px 5px rgba(32, 81, 122, 0.5);
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media screen and (max-width: 500px) {
+              width: 320px;
+              height: 200px;
+            }
+          }
+
+          .description {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+            display: none;
+
+            @media screen and (max-width: 1250px) {
+              margin-top: 20px;
+              margin-bottom: 10px;
+              font-size: 16px;
+              max-width: 600px;
+              text-align: center;
+              display: flex;
+            }
+          }
+        }
+
+        .bottom {
+          margin-bottom: 20px;
+
+          .firstButton {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      .inside {
+        max-width: 800px;
+        width: 100%;
+        height: 610px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 1250px) {
+          display: none;
+        }
+
+        .planethorse {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .description {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            margin-top: 40px;
+          }
+        }
+
+        .megahyped {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .nftCollection {
+            width: 640px;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+
+            .first {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .second {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            .nft {
+              width: 200px;
+              height: 200px;
+              background-color: white;
+              margin: 5px;
+              border-radius: 20px;
+            }
+          }
+
+          .description {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            margin-top: 40px;
+          }
+        }
+
+        .portales {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          .demostration {
+            width: 100%;
+            height: 430px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .gif {
+              width: 740px;
+              height: 420px;
+              background-image: url('/images/Projects/Popup/Portales/portales_preview.png');
+              background-size: cover;
+              border-radius: 20px;
+            }
+
+            .hackathon {
+              width: 220px;
+              height: 145px;
+              background-color: yellow;
+              position: absolute;
+              margin-top: 320px;
+              margin-left: 550px;
+              background-image: url('/images/Projects/Popup/Portales/hackathon.png');
+              background-size: cover;
+              border-radius: 20px;
+            }
+          }
+
+          .description {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            margin-top: 40px;
+          }
+        }
+
+        .chatr {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row-reverse;
+
+          .demostration {
+            width: 400px;
+            height: 610px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .app {
+              width: 340px;
+              height: 475px;
+              background-image: url('/images/Projects/Popup/ChatR/chatr_preview.png');
+              background-size: cover;
+            }
+          }
+
+          .description {
+            max-width: 400px;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
