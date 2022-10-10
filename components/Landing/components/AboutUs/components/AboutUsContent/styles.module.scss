@@ -59,6 +59,11 @@
           line-height: 30px;
         }
 
+        @media (max-height: 600px) {
+          font-size: 25px;
+          line-height: 25px;
+        }
+
         .thinTitle {
           display: flex;
           font-weight: 400;
@@ -123,14 +128,17 @@
       }
 
       .mobileCardsGrid {
-        max-width: 240px;
-        max-height: 245px;
+        max-width: 300px;
         margin-top: 20px;
-        margin-left: 40px;
+        margin-left: -7px;
         z-index: 999;
 
         @media (min-width: 1150px) {
           display: none;
+        }
+
+        @media (max-height: 600px) {
+          margin-top: -10px;
         }
       }
     }

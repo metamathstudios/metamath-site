@@ -10,12 +10,15 @@ import performance from './components/AboutCards/assets/performance.svg'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import SwiperCore, { Autoplay } from 'swiper'
-
+import SwiperCore, { Autoplay, Navigation } from 'swiper'
+import 'swiper/css/navigation'
 import styles from './styles.module.scss'
+import { useState } from 'react'
 
 const AboutUsContent = () => {
   SwiperCore.use([Autoplay])
+
+  const [active, setActive] = useState(null)
 
   return (
     <div className={styles.container}>
@@ -55,8 +58,9 @@ const AboutUsContent = () => {
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: true
-                
               }}
+              navigation={true}
+              modules={[Navigation]}
             >
               <SwiperSlide>            
                 <GreenAboutCard title='Trust' text='Professionals focused on Security and best testing Practices' image={trust} />
