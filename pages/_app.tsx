@@ -5,14 +5,26 @@ import 'swiper/css'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import Preloader from '../components/Preloader'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
     AOS.init()
+    setTimeout(() => setLoading(true), 4000)
   }, [])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      {!loading ? (
+        <Preloader />
+      ) : (
+        <Component {...pageProps} />
+      )}
+    </>
+  )
 }
 
 export default MyApp
