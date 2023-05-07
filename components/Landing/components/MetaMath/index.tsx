@@ -27,7 +27,7 @@ const MetaMath = () => {
 
         <div className={styles.footerContainer}>
           <div className={styles.footer}>
-            © 2022 MetaMath &nbsp; <div style={{cursor: 'pointer'}}>Terms of Service</div>&nbsp;-&nbsp;<div style={{cursor: 'pointer'}}>Privacy Policy</div>
+            © 2023 MetaMath &nbsp; <div style={{cursor: 'pointer'}}>Terms of Service</div>&nbsp;-&nbsp;<div style={{cursor: 'pointer'}}>Privacy Policy</div>
           </div>
         </div>
       </div>
