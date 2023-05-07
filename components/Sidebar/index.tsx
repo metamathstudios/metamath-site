@@ -114,7 +114,7 @@ const Sidebar: React.FC = () => {
           <div className={styles.links}>
             <span>Terms of service</span> - <span>Privacy policy</span>
           </div>
-          <div className={styles.copy}>© 2022 MetaMath</div>
+          <div className={styles.copy}>© 2023 MetaMath</div>
         </div>
       </div>
     </aside>
