@@ -6,7 +6,6 @@ import chatr from './assets/chatr.png'
 import mobileProjects from './assets/mobilesomeprojects.svg'
 import planethorse from './assets/planethorse.png'
 import portales from './assets/portales.png'
-import megahyped from './assets/megahyped.png'
 import projects from './assets/someprojects.svg'
 
 import styles from './styles.module.scss'
@@ -47,21 +46,6 @@ const ProjectsContent = () => {
                 className={styles.image}
               />
             </div>
-            
-            {screenHeight >= 640 ?
-              <div
-                className={styles.projectCard}
-                onClick={() => {
-                  setPopup('megahyped')
-                }}
-              >
-                <Image
-                src={megahyped}
-                alt="Mega Hyped"
-                className={styles.image}
-              />
-              </div>
-            : null}
 
             <div
               className={styles.projectCard}
